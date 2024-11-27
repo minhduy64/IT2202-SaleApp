@@ -11,9 +11,9 @@
 {% if products %}
 <div class="row">
     {% for p in products %}
-    <div class="col-md-3 col-12">
+    <div class="col-md-3 col-12 p-2">
         <div class="card">
-            <img class="card-img-top" src="{{ p.image }}" alt="Card image">
+            <img class="card-img-top" src="{{ p.image }}" alt="{{ p.name }}">
             <div class="card-body">
                 <h4 class="card-title">{{ p.name }}</h4>
                 <p class="card-text">{{ p.price }} VNĐ</p>
